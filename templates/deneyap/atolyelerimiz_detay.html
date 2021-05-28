@@ -1,0 +1,252 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block extra_css %}
+{% endblock extra_css %}
+
+{% block content %}
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="text-transform: unset;">Deneyap eğitmeni
+                        olmak
+                        ister misin?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Geleceğin Teknolojilerini üretecek gençleri Deneyap Teknoloji Atölyelerinde yetiştiriyoruz!<br>
+                    <br>
+                    Öğrencilerimizi ülkemizin gelişimine katkı sağlayan, üretken, yenilikçi bireyler olma yolunda
+                    desteklemek üzere, 81 ilde 100 Deneyap Teknoloji Atölyesi kurmayı hedefliyoruz. Bu hedefimizde
+                    atölyelerde eğitmenlik yaparak bizimle birlikte olmak isteyen tüm eğitmenlerimizin başvurularını
+                    bekliyoruz.<br>
+                    <br>
+                    <strong>Eğitimlerin devam ettiği iller :</strong> ADANA ,ANKARA, ANTALYA, EDİRNE, ERZURUM,
+                    ESKİŞEHİR,
+                    HAKKARİ, İZMİR, KONYA, MANİSA, MUĞLA, TRABZON, ADIYAMAN, AFYONKARAHİSAR, AĞRI, ÇANAKKALE, ÇORUM,
+                    ELAZIĞ,
+                    GAZİANTEP,ISPARTA, KAHRAMANMARAŞ, KASTAMONU, MALATYA, RİZE, SAKARYA, SAMSUN, ŞANLIURFA, TOKAT,
+                    YOZGAT<br>
+                    <br>
+                    Diğer illerimizde kurulacak atölyeler için çalışmalar sürdürülmektedir. Toplamda 4 faz olacak
+                    şekilde 81
+                    ilde 100 Deneyap Teknoloji Atölyesi kurulacaktır. <br>
+                    <br>
+                    <strong>İlgili ilde Deneyap Teknoloji Atölyesi kurulduğu zaman veya seçilen eğitim aktifleştiği
+                        zaman
+                        başvuruda bulunan adaylarla iletişime geçilerek seçme sürecine dahil edileceklerdir.<br>
+                        <br>
+                    </strong>Eğitmenlik duyuru süreçlerinden haberdar olmak için <a
+                        href="http://kys.t3vakfi.org/frontend/scholarship/eyJpdiI6ImtrUGc0bHNIY2RzXC9jSW45TDByNW53PT0iLCJ2YWx1ZSI6ImdSTThjUjN2Z3dqaVwvaDhvM2lZS1FRPT0iLCJtYWMiOiIzYjAzNDNhYWUwODhlMWU2MWVmNDU3ZWNiZmZhYjMxMjUzM2NiYWY3M2M2MWVjZTNhNGQ3YmUzNWNjMDg0YWIzIn0="
+                        target="_blank"><strong>başvuru formunu</strong></a> doldurunuz.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    <a href="http://kys.t3vakfi.org/frontend/scholarship/eyJpdiI6ImtrUGc0bHNIY2RzXC9jSW45TDByNW53PT0iLCJ2YWx1ZSI6ImdSTThjUjN2Z3dqaVwvaDhvM2lZS1FRPT0iLCJtYWMiOiIzYjAzNDNhYWUwODhlMWU2MWVmNDU3ZWNiZmZhYjMxMjUzM2NiYWY3M2M2MWVjZTNhNGQ3YmUzNWNjMDg0YWIzIn0="
+                       target="_blank" class="btn btn-success">Başvur</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="page-header page-header-classic page-header-md">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
+                    <span class="page-header-title-border visible" style="width: 101.594px;"></span>
+                    <h1 data-title-border="">BAYRAMPAŞA DENEYAP ATÖLYESİ</h1>
+                </div>
+                <div class="col-md-4 order-1 order-md-2 align-self-center">
+                    <ul class="breadcrumb d-block text-md-right">
+                        <li><a href="index.html" style="color:#000;">Anasayfa</a></li>
+                        <li class="active">BAYRAMPAŞA DENEYAP ATÖLYESİ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container py-4">
+
+
+        <h2 class="text-color-dark font-weight-normal text-5 mb-2">Atölye <strong
+                class="font-weight-extra-bold">Konum</strong></h2>
+        <div id="map_canvas" style="width: 100%; height: 200px;"></div>
+
+        <script type="text/javascript">
+            var locations = [
+                ['<strong>BAYRAMPAŞA DENEYAP ATÖLYESİ</strong> </br><strong>Adres:</strong> Orta mahalle Topkapı Maltepe Caddesi Canayakın Sitesi A blok No 6 34040 Bayrampaşa / İstanbul</br><strong>Telefon:</strong> +90 (212) 501 94 34</br><a href=\'atolye-BAYRAMPASA-DENEYAP-ATOLYESI-22.html\'>Detayları Görüntüleyin</a>', 41.02882004185366, 28.91832384602391, 4]];
+            var map;
+            var markers = [];
+
+            function init() {
+                map = new google.maps.Map(document.getElementById('map_canvas'), {
+                    zoom: 8,
+                    center: new google.maps.LatLng(41.0180089, 28.9147521),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                });
+
+                var num_markers = locations.length;
+                for (var i = 0; i < num_markers; i++) {
+                    markers[i] = new google.maps.Marker({
+                        position: {lat: locations[i][1], lng: locations[i][2]},
+                        map: map,
+                        html: locations[i][0],
+                        id: i,
+                    });
+
+                    google.maps.event.addListener(markers[i], 'click', function () {
+                        var infowindow = new google.maps.InfoWindow({
+                            id: this.id,
+                            content: this.html,
+                            position: this.getPosition()
+                        });
+                        google.maps.event.addListenerOnce(infowindow, 'closeclick', function () {
+                            markers[this.id].setVisible(true);
+                        });
+                        this.setVisible(false);
+                        infowindow.open(map);
+                    });
+                }
+            }
+
+            init();
+        </script>
+
+    </div>
+    <div class="container">
+
+
+        <div class="row  ">
+
+            <div class="col-md-4 appear-animation animated fadeIn appear-animation-visible"
+                 data-appear-animation="fadeIn"
+                 data-appear-animation-delay="1400" style="animation-delay: 1400ms;">
+                <h2 class="text-color-dark font-weight-normal text-5 mb-2">Atölye <strong
+                        class="font-weight-extra-bold">Detayları</strong>
+                </h2>
+                <ul class="list list-icons list-primary list-borders text-2">
+                    <li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Derslik
+                        Sayısı:</strong> 1
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="col-md-4 appear-animation animated fadeIn appear-animation-visible"
+                 data-appear-animation="fadeIn"
+                 data-appear-animation-delay="1400" style="animation-delay: 1400ms;">
+                <h2 class="text-color-dark font-weight-normal text-5 mb-2">&nbsp;&nbsp;</h2>
+                <ul class="list list-icons list-primary list-borders text-2">
+                    <li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Öğrenci
+                        Sayısı:</strong> 60
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+            <div class="col-md-4 appear-animation animated fadeIn appear-animation-visible"
+                 data-appear-animation="fadeIn"
+                 data-appear-animation-delay="1400" style="animation-delay: 1400ms;">
+                <h2 class="text-color-dark font-weight-normal text-5 mb-2">&nbsp;&nbsp;</h2>
+                <ul class="list list-icons list-primary list-borders text-2">
+                    <li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Öğrenci
+                        Grubu:</strong> Lise - Ortaokul
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <section class="section section-height-2 border-0 mt-5 mb-0 pt-5">
+
+        <div class="container py-2">
+            <div class="row mt-3 pb-4">
+                <div class="col text-center">
+                    <h2 class="font-weight-semibold text-6 mb-0">Verilen <strong>Eğitimler</strong></h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+
+
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <div class="featured-boxes featured-boxes-modern-style-2 featured-boxes-modern-style-2-hover-only featured-boxes-modern-style-primary m-0 mb-4 pb-3">
+                        <div class="featured-box featured-box-no-borders featured-box-box-shadow"
+                             style="height: 118px;">
+                            <a href="#" class="text-decoration-none">
+											<span class="box-content px-1 py-4 text-center d-block">
+												<span class="text-primary text-8 position-relative top-3 mt-3"><img
+                                                        src="upload/201904101213039912.jpg" class="img-fluid"
+                                                        style="width: 100px;"></span>
+												<span class="elements-list-shadow-icon text-default"><i
+                                                        class="fas fa-chalkboard-teacher"></i></span>
+												<span class="font-weight-bold text-uppercase text-1 negative-ls-1 d-block text-dark pt-2">TASARIM VE ÜRETİM</span>
+											</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container ">
+        <h2 class="text-color-dark font-weight-normal text-5 mb-2">Atölye <strong class="font-weight-extra-bold">Fotoğrafları</strong>
+        </h2>
+
+        <div class="row">
+            <div class="col" style="min-height: 250px;">
+
+                <div class="row portfolio-list lightbox"
+                     data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}">
+
+
+                    <div class="col-12 col-sm-6 col-lg-3 appear-animation animated expandIn appear-animation-visible"
+                         data-appear-animation="expandIn" data-appear-animation-delay="200"
+                         style="animation-delay: 200ms;">
+                        <div class="portfolio-item">
+										<span class="thumb-info thumb-info-lighten thumb-info-centered-icons border-radius-0">
+											<span class="thumb-info-wrapper border-radius-0">
+												<img src="upload/202012315101933715.jpg"
+                                                     class="img-fluid border-radius-0" alt="">
+												<span class="thumb-info-action">
+													<a href="upload/202012315101933715.jpg" class="lightbox-portfolio">
+														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i
+                                                                class="fas fa-search text-dark"></i></span>
+													</a>
+												</span>
+											</span>
+										</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>    </div>    </div>
+
+    </div>
+    </div>
+
+    </div>
+{% endblock %}

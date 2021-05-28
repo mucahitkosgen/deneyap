@@ -1,0 +1,347 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block extra_css %}
+{% endblock extra_css %}
+
+{% block content %}    
+  <head>
+     <title>DENEYAP Atölyeleri</title>
+ </head>        
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="text-transform: unset;">Deneyap eğitmeni olmak ister misin?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      Geleceğin Teknolojilerini üretecek gençleri Deneyap Teknoloji Atölyelerinde yetiştiriyoruz!<br>
+<br>
+Öğrencilerimizi ülkemizin gelişimine katkı sağlayan, üretken, yenilikçi bireyler olma yolunda desteklemek üzere,  81 ilde 100 Deneyap Teknoloji Atölyesi kurmayı hedefliyoruz. Bu hedefimizde atölyelerde eğitmenlik yaparak bizimle birlikte olmak isteyen tüm eğitmenlerimizin başvurularını bekliyoruz.<br>
+<br>
+<strong>Eğitimlerin devam ettiği iller :</strong> ADANA ,ANKARA, ANTALYA, EDİRNE, ERZURUM, ESKİŞEHİR, HAKKARİ,  İZMİR, KONYA, MANİSA, MUĞLA, TRABZON, ADIYAMAN, AFYONKARAHİSAR, AĞRI, ÇANAKKALE, ÇORUM, ELAZIĞ, GAZİANTEP,ISPARTA, KAHRAMANMARAŞ, KASTAMONU, MALATYA, RİZE, SAKARYA, SAMSUN, ŞANLIURFA, TOKAT, YOZGAT<br>
+<br>
+Diğer illerimizde kurulacak atölyeler için çalışmalar sürdürülmektedir. Toplamda 4 faz olacak şekilde 81 ilde 100 Deneyap Teknoloji Atölyesi kurulacaktır. <br>
+<br>
+<strong>İlgili ilde Deneyap Teknoloji Atölyesi kurulduğu zaman veya seçilen eğitim aktifleştiği zaman başvuruda bulunan adaylarla iletişime geçilerek seçme sürecine dahil edileceklerdir.<br>
+<br>
+</strong>Eğitmenlik duyuru süreçlerinden haberdar olmak için <a  href="http://kys.t3vakfi.org/frontend/scholarship/eyJpdiI6ImtrUGc0bHNIY2RzXC9jSW45TDByNW53PT0iLCJ2YWx1ZSI6ImdSTThjUjN2Z3dqaVwvaDhvM2lZS1FRPT0iLCJtYWMiOiIzYjAzNDNhYWUwODhlMWU2MWVmNDU3ZWNiZmZhYjMxMjUzM2NiYWY3M2M2MWVjZTNhNGQ3YmUzNWNjMDg0YWIzIn0=" target="_blank"><strong>başvuru formunu</strong></a> doldurunuz.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <a  href="http://kys.t3vakfi.org/frontend/scholarship/eyJpdiI6ImtrUGc0bHNIY2RzXC9jSW45TDByNW53PT0iLCJ2YWx1ZSI6ImdSTThjUjN2Z3dqaVwvaDhvM2lZS1FRPT0iLCJtYWMiOiIzYjAzNDNhYWUwODhlMWU2MWVmNDU3ZWNiZmZhYjMxMjUzM2NiYWY3M2M2MWVjZTNhNGQ3YmUzNWNjMDg0YWIzIn0="  target="_blank" class="btn btn-success">Başvur</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+				<div role="main" class="main" style="
+    margin-top: -26px;
+">
+                          <hr style="    height: 4px;
+    background-color: #e64c3f;
+    margin-top: 0px;
+    margin-bottom: 0px;" />
+		  
+				<div class="slider-container rev_slider_wrapper">
+					<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.7" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1920, 'gridheight': 960, 'responsiveLevels': [4096,1200,992,500]}">
+						<ul>
+							<li data-transition="fade">
+
+							<a href="https://deneyap.org/haber-GYP-Fikir-Maratonu-Basvurulari-Basladi-48.html">	<img src="{% static 'upload/26d8071156ba1d2bdbddd29c2c6e882f.jpg' %}"  
+						
+									data-bgposition="center center" 
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									class="rev-slidebg" style="width:100%;">
+</a>
+						
+								
+							</li>
+								<li data-transition="fade">
+
+							<a href="https://deneyapturkiye.org/deneyap-EGITMEN-BELIRLEME-ASAMALARI-14.html" >	<img src="{% static 'upload/4a34336031b3cee4e64a4f3cc1822bdd.jpg' %}"  
+						
+									data-bgposition="center center" 
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									class="rev-slidebg" style="width:100%;">
+</a>
+						
+								
+							</li>
+													</ul>
+					</div>
+				</div>
+		
+				<!---- Tanıtım videosu  ----->
+                                <div class="main" id="home-intro">
+					<div class="container">
+				
+						<div class="row align-items-center">
+							<div class="col-lg-12">
+							    	<div class="embed-responsive embed-responsive-16by9">
+							    	    <iframe width="560" height="315" src="https://www.youtube.com/embed/CSA80UF_goc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<!--	<iframe width="%100" height="%100" src="https://www.youtube.com/watch?v=CSA80UF_goc" frameborder="0" rel="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+							</div>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+				<!---- tanıtım videos son----->
+				
+				<div class="home-intro bg-primary" id="home-intro">
+					<div class="container">
+				
+						<div class="row align-items-center">
+							<div class="col-lg-12">
+							    	
+								<p>
+									<span class="highlighted-word" style="    font-family: inherit;">Bunları Biliyor musunuz?</span>
+									<span><strong>               Deneyap İstanbul’un yürütücü ve paydaş kurumları arasında Milli Eğitim Bakanlığı ve İstanbul Büyükşehir Belediyesi’nin olduğunu biliyor musunuz?</strong></span>
+								</p>
+							</div>
+							
+						</div>
+				
+					</div>
+				</div>
+			</section>
+				<section class="section border-0 m-0 pb-3">
+					<div class="container container-lg">
+						<div class="row pb-1">
+                                                     							<div class="col-sm-6 col-lg-4 mb-4 pb-2">
+								<a href="haber-GYP-Fikir-Maratonu-Basvurulari-Basladi-48.html">
+									<article>
+										<div class="thumb-info thumb-info-no-borders thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+											<div class="thumb-info-wrapper thumb-info-wrapper-opacity-6">
+												<img src="{% static 'upload/2021051117264213017.jpg' %}" class="img-fluid" alt="How To Take Better Concert Pictures in 30 Seconds">
+												<div class="thumb-info-title bg-transparent p-4">
+													<div class="thumb-info-type bg-color-primary px-2 mb-1">GYP Fikir Maratonu Başvuruları Başladı!</div>
+												
+												</div>
+											</div>
+										</div>
+									</article>
+								</a>
+							</div>
+
+													<div class="col-sm-6 col-lg-4 mb-4 pb-2">
+								<a href="haber-Deneyap-Kart-Sizleri-Bekliyor-47.html">
+									<article>
+										<div class="thumb-info thumb-info-no-borders thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+											<div class="thumb-info-wrapper thumb-info-wrapper-opacity-6">
+												<img src="{% static 'upload/2021042223301811123.jpg' %}" class="img-fluid" alt="How To Take Better Concert Pictures in 30 Seconds">
+												<div class="thumb-info-title bg-transparent p-4">
+													<div class="thumb-info-type bg-color-primary px-2 mb-1">Deneyap Kart Sizleri Bekliyor!</div>
+												
+												</div>
+											</div>
+										</div>
+									</article>
+								</a>
+							</div>
+
+													<div class="col-sm-6 col-lg-4 mb-4 pb-2">
+								<a href="haber-TEKNOFEST-2021-TEKNOLOJI-YARISMALARI-SON-BASVURU-TARIHI-UZATILDI-46.html">
+									<article>
+										<div class="thumb-info thumb-info-no-borders thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+											<div class="thumb-info-wrapper thumb-info-wrapper-opacity-6">
+												<img src="{% static 'upload/20210311618535916.jpg' %}" class="img-fluid" alt="How To Take Better Concert Pictures in 30 Seconds">
+												<div class="thumb-info-title bg-transparent p-4">
+													<div class="thumb-info-type bg-color-primary px-2 mb-1">TEKNOFEST 2021 TEKNOLOJİ YARIŞMALARI SON BAŞVURU TARİHİ UZATILDI!</div>
+												
+												</div>
+											</div>
+										</div>
+									</article>
+								</a>
+							</div>
+
+													<div class="col-sm-6 col-lg-4 mb-4 pb-2">
+								<a href="haber-Deneyap-Teknoloji-Atolyeleri-YAZILIM-TEKNOLOJILERI-ve-ILERI-ROBOTIK-egitmenlerini-ariyor-45.html">
+									<article>
+										<div class="thumb-info thumb-info-no-borders thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+											<div class="thumb-info-wrapper thumb-info-wrapper-opacity-6">
+												<img src="{% static 'upload/202102161724584617.jpg' %}" class="img-fluid" alt="How To Take Better Concert Pictures in 30 Seconds">
+												<div class="thumb-info-title bg-transparent p-4">
+													<div class="thumb-info-type bg-color-primary px-2 mb-1">Deneyap Teknoloji Atölyeleri YAZILIM TEKNOLOJİLERİ ve İLERİ ROBOTİK eğitmenlerini arıyor!</div>
+												
+												</div>
+											</div>
+										</div>
+									</article>
+								</a>
+							</div>
+
+													<div class="col-sm-6 col-lg-4 mb-4 pb-2">
+								<a href="haber-GIRISIMCI-YETISTIRME-PROGRAMI-43.html">
+									<article>
+										<div class="thumb-info thumb-info-no-borders thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+											<div class="thumb-info-wrapper thumb-info-wrapper-opacity-6">
+												<img src="{% static 'upload/20210230015573300.jpg' %}" class="img-fluid" alt="How To Take Better Concert Pictures in 30 Seconds">
+												<div class="thumb-info-title bg-transparent p-4">
+													<div class="thumb-info-type bg-color-primary px-2 mb-1">GİRİŞİMCİ YETİŞTİRME PROGRAMI</div>
+												
+												</div>
+											</div>
+										</div>
+									</article>
+								</a>
+							</div>
+
+													<div class="col-sm-6 col-lg-4 mb-4 pb-2">
+								<a href="haber-TEKNOFEST-2021-Teknoloji-Yarismalari-Basvurulari-Acildi-42.html">
+									<article>
+										<div class="thumb-info thumb-info-no-borders thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+											<div class="thumb-info-wrapper thumb-info-wrapper-opacity-6">
+												<img src="{% static 'teknofestimg/teknofest-haber2021.jpg' %}" class="img-fluid" alt="How To Take Better Concert Pictures in 30 Seconds">
+												<div class="thumb-info-title bg-transparent p-4">
+													<div class="thumb-info-type bg-color-primary px-2 mb-1">TEKNOFEST 2021 Teknoloji Yarışmaları Başvuruları Açıldı!</div>
+												
+												</div>
+											</div>
+										</div>
+									</article>
+								</a>
+							</div>
+
+						                        <div class="col-sm-12" style="    text-align: center;">
+
+							
+									<a href="haberler.html" class="btn btn-quaternary rounded-0 mb-2">Tüm Haberler</a>
+									
+									
+								</div>
+					</div>
+                    
+                    
+				</section>
+                
+               
+            
+            
+				</section>
+			</div>
+ <!---- Başlık ----->
+ <div class="home-intro bg-primary" id="home-intro" style="    background-color: #e31d1a !important;">
+					<div class="container">
+				
+						<div class="row align-items-center">
+							<div class="col-lg-12" style="text-align:center;">
+								<p>
+									<span class="highlighted-word" style="    font-family: inherit;">Galeri</span>
+								</p>
+							</div>
+							
+						</div>
+				
+					</div>
+				</div>
+<!---- Başlık son----->
+<!---- içerik----->
+<div class="container py-2" style="padding-top:30px;">
+
+	<div class="row">
+						<div class="col">
+						<div class="owl-carousel owl-theme stage-margin owl-loaded owl-drag owl-carousel-init" data-plugin-options="{'items': 4, 'margin': 10, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 40}" style="height: auto;">
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							<div class="owl-stage-outer" style="    margin-top: 17px;"><div class="owl-stage" style="transform: translate3d(-173px, 0px, 0px); transition: all 0.25s ease 0s; width: 1814px; padding-left: 40px; padding-right: 40px;">
+                            
+                            
+                                                                                                
+                                <div class="owl-item" style=" margin-right: 10px;"><div>
+																						<a href="galeri-detay-44.html">
+<img class="img-fluid rounded"  src="{% static 'upload/202003122040007120.jpg' %}" style="height: 200px;" height="200"></a>
+								</div></div>
+                                
+                                
+                                                                
+                                <div class="owl-item" style=" margin-right: 10px;"><div>
+																						<a href="galeri-detay-16.html">
+<img class="img-fluid rounded"  src="{% static 'upload/202003122031177120.jpg' %}" style="height: 200px;" height="200"></a>
+								</div></div>
+                                
+                                
+                                                                
+                                <div class="owl-item" style=" margin-right: 10px;"><div>
+																						<a href="galeri-detay-15.html">
+<img class="img-fluid rounded"  src="{% static 'upload/202003122029067120.jpg' %}" style="height: 200px;" height="200"></a>
+								</div></div>
+                                
+                                
+                                                                
+                                <div class="owl-item" style=" margin-right: 10px;"><div>
+																						<a href="galeri-detay-14.html">
+<img class="img-fluid rounded"  src="{% static 'upload/202003122020227120.jpg' %}" style="height: 200px;" height="200"></a>
+								</div></div>
+                                
+                                
+                                                                
+                                <div class="owl-item" style=" margin-right: 10px;"><div>
+																						<a href="galeri-detay-13.html">
+<img class="img-fluid rounded"  src="{% static 'upload/202003122011457120.jpg' %}" style="height: 200px;" height="200"></a>
+								</div></div>
+                                
+                                
+                                                                
+                                
+                                </div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"></button><button type="button" role="presentation" class="owl-next"></button></div><div class="owl-dots disabled"></div></div>
+					</div>	
+					</div>	
+					</div>
+					
+<!---- içerik son----->	
+					
+	<div class="home-intro bg-primary" id="home-intro">
+		<div class="container">
+				
+						<div class="row align-items-center">
+							<div class="col-lg-12" style="text-align:center;">
+								<p>
+									<span class="highlighted-word" style="    font-family: inherit;">Yürütücü Kurumlar</span>
+					
+								</p>
+							</div>
+							
+						</div>
+				
+	  </div>
+	</div>
+                <section class="section section-height-3 bg-light border border-bottom-0 m-0" style="padding:10px; text-align:center">
+					<div class="container">
+						<div class="row" style="text-align:center;">
+			           <a href="http://turkiyeteknolojitakimi.org/" target="_blank"> <img src="{% static 'upload/2019042210331211110.jpg' %}" style="    padding-top: 30px;"></a>
+                        		</div>
+					</div>
+				</section>
+				
+
+			    
+		
+
+		<!-- Vendor -->
+		
+
+
+			       
+{% endblock %}
+    
+{% block extra_script %}
+{% endblock %}
+                
